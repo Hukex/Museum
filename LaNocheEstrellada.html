@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FV</title>
+
+</head>
+
+<body>
+
+    <!-- LOS 3 MODALES ESTAN DECLARADOS FUERA DE CUALQUIER CONTENEDOR QUE TENGA O PUEDA LLEGAR A SER FIXED, ABSOLUTE O RELATIVE, YA QUE GENERA PROBLEMAS CON EL Z-FIXED Y SE BUGUEA -->
+    <!-- Modal de registro-->
+    <div class="modal fade" id="registrarse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="card bg-light">
+                    <article class="card-body mx-auto" style="max-width: 400px;">
+                        <h4 class="card-title mt-3 text-center">Crear Cuenta</h4>
+                        <p class="text-center">Para apoyarnos necesitas una cuenta</p>
+                        <form>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                </div>
+                                <input name="" class="form-control" placeholder="Nombre completo" type="text">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                </div>
+                                <input name="" class="form-control" placeholder="Correo electronico" type="email">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                                </div>
+                                <select class="custom-select" style="max-width: 120px;">
+                                    <option selected="">+34</option>
+                                    <option value="1">+1907</option>
+                                    <option value="2">+355</option>
+                                    <option value="3">+49</option>
+                                    <option value="4">+376</option>
+                                    <option value="5">+244</option>
+                                    <option value="6">+54</option>
+                                    <option value="7">+61</option>
+                                    <option value="8">+55</option>
+                                    <option value="9">+39</option>
+                                </select>
+                                <input name="" class="form-control" placeholder="Telefono" maxlength="9" type="text">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                </div>
+                                <input class="form-control" placeholder="Introduzca una contraseña" type="password">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                                </div>
+                                <input class="form-control" placeholder="Repetir contraseña" type="password">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block"> Crear cuenta</button>
+                            </div>
+                            <p class="text-center">¿Tienes cuenta? <a data-toggle="modal" data-target="#login" data-dismiss="modal" href="">Inicia sesión</a> </p>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de login-->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content pb-3 pt-5 pr-5 pl-5">
+
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo electronico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
+                        <small id="emailHelp" class="form-text text-muted">Tus datos estaran seguros</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                    </div>
+                    <p class="text-center">¿Aún no tienes cuenta? <a data-toggle="modal" data-target="#registrarse" data-dismiss="modal" href="">Registrate</a> </p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de tabla -->
+    <div class="modal fade" id="tabla" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <table class="table table-bordered table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">TOP</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>2300€</td>
+                            <td>13/12/2014</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jerry</td>
+                            <td>2210€</td>
+                            <td>1/2/2015</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Sarah</td>
+                            <td>1300€</td>
+                            <td>5/4/2013</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Gustavo</td>
+                            <td>300€</td>
+                            <td>21/6/2016</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------  ENCABEZADO ----------------------------------->
+    <div class="encabezado">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="proyectoFinalBootstrap.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" data-toggle="modal" data-target="#tabla" href="">Tabla de
+                        donaciones</a>
+                    <a class="nav-item nav-link" href="artistas.html">Artistas</a>
+                    <a class="nav-item nav-link" data-toggle="modal" data-target="#login" href="">Login</a>
+                    <a class="nav-item nav-link" data-toggle="modal" data-target="#registrarse" href="#">Registrarse</a>
+
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------------------------->
+
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 w-50" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </nav>
+        <div class="progress" style="height: 8px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <center>
+            <div class="imagen">
+                <span style="position: relative;top:15px;" class="badge badge-light">Fecha de creación:
+                    1889</span> <img src="DatosProyectoFinalBootstrap/LaNocheEstrellada.jpg">
+            </div>
+        </center>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">La noche estrellada</h1>
+            <p class="lead">La noche estrellada (en neerlandés De sterrennacht) es la obra maestra del pintor postimpresionista Vincent Van Gogh. El cuadro lo realizó en el sanatorio de Saint-Rémy-de-Provence, donde se recluyó hacia el final de su vida, a mediados de
+                1889, trece meses antes de su muerte. Van Gogh usó óleo humedecido y pinceles finos para realizar la obra. Desde 1941 forma parte de la colección permanente del Museo de Arte Moderno de Nueva York. Considerado el magnum opus de van Gogh,
+                el cuadro ha sido reproducido en numerosas ocasiones y es conocido como una de las pinturas más famosas de la historia.
+            </p>
+            <hr class="my-4">
+            <p class="text-right">Artista: Vincent van Gogh</p>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GqukPl3u5Pg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        </div>
+    </div>
+
+    <center>
+        <div class="alert m-0 alert-info">
+            <strong>Info!</strong> LA INFORMACIÓN ES UN COPY/PASTE , ¡NO TENGO NI IDEA DE ARTE!
+        </div>
+    </center>
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin=" anonymous ">
+    </script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity=" sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin=" anonymous "></script>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity=" sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin=" anonymous "></script>
+    <script>
+        // FUNCION QUE DETECTA SI SE REALIZA SCROLL , Y EL TITULO SE QUEDA FIJO A LA PARTE SUPERIOR
+        $(document).ready(function() {
+            var altura = ($('.encabezado')[0].offsetTop + 32); // Recoge la altura
+            if ($(window).scrollTop() > altura) {
+                $(".encabezado").addClass("mover");
+            }
+            var barra = document.querySelector(".progress");
+
+            $(window).on("scroll", function() { // Cuando se hace scroll en la ventana se ejecuta 
+                if ($(window).scrollTop() > altura) { // Si es mayor la diferencia que la altura anterior
+                    $(".encabezado").addClass("mover");
+                } else {
+                    $(".encabezado").removeClass("mover"); // Se eliminan cuando la diferencia es menor
+                }
+                barra.children[0].style = "width:" + $(document).scrollTop() / ($(document).height() - 890) * 100 + "%";
+
+            })
+
+        });
+    </script>
+</body>
+
+</html>
