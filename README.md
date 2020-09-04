@@ -33,7 +33,7 @@ But it also has **HTML/CSS** and **jQuery** to make it works correctly.
 [💠You can try it!💠](https://hukex.github.io/Museum/proyectoFinalBootstrap.html)
 
  ![GIF](https://github.com/Hukex/Museum/blob/master/readmefiles/preview.gif)
-</p>
+
 
 # Screenshots📷
 
