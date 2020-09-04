@@ -1,6 +1,6 @@
 
 
-![IMG](https://github.com/Hukex/JustForTest/blob/master/readmefiles/banner.png?)
+![IMG](https://github.com/Hukex/Museum/blob/master/readmefiles/banner.png?)
 
 # INDEX 📋
 
@@ -32,7 +32,7 @@ But it also has **HTML/CSS** and **jQuery** to make it works correctly.
 
 [💠You can try it!💠](https://hukex.github.io/Museum/proyectoFinalBootstrap.html)
 
- ![GIF](https://github.com/Hukex/JustForTest/blob/master/readmefiles/preview.gif?raw=true)
+ ![GIF](https://github.com/Hukex/Museum/blob/master/readmefiles/preview.gif?raw=true)
 </p>
 
 # Screenshots📷
@@ -59,7 +59,7 @@ But it also has **HTML/CSS** and **jQuery** to make it works correctly.
 *You are lucky* 😃 *it doesn't need installation. Just clone this repository and enjoy it.*
 
 ```bash
-git clone https://github.com/Hukex/JustForTest.git
+git clone https://github.com/Hukex/Museum.git
 ```
 
 # Usage📋
