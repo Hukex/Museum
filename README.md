@@ -30,7 +30,7 @@ But it also has **HTML/CSS** and **jQuery** to make it works correctly.
 
 # Preview🔍
 
-[💠You can try it!💠](https://hukex.github.io/*)
+[💠You can try it!💠](https://hukex.github.io/Museum/proyectoFinalBootstrap.html)
 
  ![GIF](https://github.com/Hukex/JustForTest/blob/master/readmefiles/preview.gif?raw=true)
 </p>
